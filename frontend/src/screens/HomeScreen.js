@@ -48,7 +48,11 @@ function HomeScreen() {
       <Helmet>
         <title>ShopLive</title>
       </Helmet>
-      <h1 style="font-weight:bold;">Featured Products</h1>
+      <div className="m-3" id="sales">
+        <img src="https://i.postimg.cc/JzWqnvnx/salesimage-ESD.png" alt="logo" class="center"></img>
+      </div>
+      
+      <h1>Featured Products</h1>
       <div className="products">
         {loading ? (
           <LoadingBox />
