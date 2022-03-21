@@ -71,6 +71,7 @@ function App() {
                         to="#signout"
                         onClick={signoutHandler}
                       >
+                        <img src="https://i.postimg.cc/76KGQfyg/User-02.png" alt="signin" height= "40" width="40"></img>
                         Sign Out
                       </Link>
                     </NavDropdown>
