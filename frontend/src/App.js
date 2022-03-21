@@ -86,6 +86,9 @@ function App() {
         </header>
         <main>
           <Container className="mt-3">
+            <Container className="m-3" id="sales">
+              <img src="https://i.postimg.cc/JzWqnvnx/salesimage-ESD.png" alt="logo" class="center"></img>
+            </Container>
             <Routes>
               <Route path="/product/:slug" element={<ProductScreen />} />
               <Route path="/cart" element={<CartScreen />} />
