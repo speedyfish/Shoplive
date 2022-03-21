@@ -42,8 +42,8 @@ function App() {
             <Container>
               <LinkContainer to="/">
                 <Navbar.Brand>
-                  <img src="https://i.postimg.cc/t4kDbN0r/1.png" alt="logo" height= "100" width="100"></img>
-                  <div class="text-dark d-inline pl-10">SHOPLIVE</div>
+                  <img src="https://i.postimg.cc/t4kDbN0r/1.png" alt="logo" height= "100" width="100" class="mr-10"></img>
+                  <div class="text-dark d-inline ml-10">SHOPLIVE</div>
                 </Navbar.Brand>
               </LinkContainer>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />

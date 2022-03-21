@@ -53,7 +53,7 @@ export default function CartScreen() {
               {cartItems.map((item) => (
                 <ListGroup.Item key={item._id}>
                   <Row className="align-itmes-center">
-                    <Col md={4}>
+                    <Col md={5}>
                       <img
                         src={item.image}
                         alt={item.name}
@@ -61,7 +61,7 @@ export default function CartScreen() {
                       ></img>{" "}
                       <Link to={`/product/${item.slug}`}>{item.name}</Link>
                     </Col>
-                    <Col md={3}>
+                    <Col md={2}>
                       <Button
                         variant="light"
                         onClick={() =>
