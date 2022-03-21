@@ -75,7 +75,7 @@ function App() {
                     </NavDropdown>
                   ) : (
                     <Link className="nav-link" to="/signin">
-                      <img src="frontend/public/User_02.png" alt="signin" height= "40" width="40"></img>
+                      <img src="frontend/public/user-login-function-name-avatar-icon-free-download-number-symbol-text-logo-transparent-png-2004255.png" alt="signin" height= "40" width="40"></img>
                     </Link>
                   )}
                 </Nav>
