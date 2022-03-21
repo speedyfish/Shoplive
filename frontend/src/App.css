@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(148, 6, 243);
 }
 
 .App-link {
@@ -38,5 +38,5 @@
 }
 
 *{
-  cursor:url('../public/images/Red.png'), auto;
+  cursor:url('../public/images/Red.png'), default;
 }
