@@ -37,6 +37,6 @@
   }
 }
 
-Body{
-  cursor:url('../public/images/Red.png');
+*{
+  cursor:url('../public/images/Red.png'), auto;
 }
