@@ -57,7 +57,7 @@ function App() {
                       </Badge>
                     )}
                   </Link>
-                  <Link>
+                  <Link className="nav-link" to="/signout">
                   <img src="https://i.postimg.cc/76KGQfyg/User-02.png" alt="signin" height= "40" width="40"></img>
                   {userInfo ? (
                     <NavDropdown title={userInfo.name} id="basic-nav-dropdown">
