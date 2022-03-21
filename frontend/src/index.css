@@ -16,7 +16,7 @@ main {
 }
 
 .btn-primary {
-  background-color: #f0c040;
+  background-color: #6ddd11;
   color: black;
 }
 
@@ -27,7 +27,7 @@ main {
 }
 
 .rating span {
-  color: #ffc000;
+  color: #e01fe0;
 }
 
 .product {
@@ -62,5 +62,5 @@ main {
 }
 .checkout-steps > div.active {
   border-bottom: 0.2rem solid #f08000;
-  color: #f08000;
+  color: #b7b914;
 }
