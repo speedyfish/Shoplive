@@ -8,6 +8,7 @@ import { useContext, useEffect, useState } from "react";
 import { Store } from "../Store";
 import { toast } from "react-toastify";
 import { getError } from "../utils";
+import "../../src/index.css";
 
 export default function SigninScreen() {
   const navigate = useNavigate();
@@ -42,7 +43,7 @@ export default function SigninScreen() {
   }, [navigate, redirect, userInfo]);
 
   return (
-    <Container className="small-container bg-dark">
+    <Container className="fluid" id = "sign-in-style">
       <Helmet>
         <title>Sign In</title>
       </Helmet>
