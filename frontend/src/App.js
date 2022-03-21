@@ -57,9 +57,10 @@ function App() {
                       </Badge>
                     )}
                   </Link>
-                  <Link className="nav-link" to="/signout">
-                  <img src="https://i.postimg.cc/76KGQfyg/User-02.png" alt="signin" height= "40" width="40"></img>
+                  
                   {userInfo ? (
+                    <Link className="nav-link" to="/signout">
+                    <img src="https://i.postimg.cc/76KGQfyg/User-02.png" alt="signin" height= "40" width="40"></img>
                     <NavDropdown title={userInfo.name} id="basic-nav-dropdown">
                       <LinkContainer to="/profile">
                         <NavDropdown.Item>User Profile</NavDropdown.Item>
@@ -76,12 +77,12 @@ function App() {
                         Sign Out
                       </Link>
                     </NavDropdown>
+                    </Link>
                   ) : (
                     <Link className="nav-link" to="/signin">
                       <img src="https://i.postimg.cc/76KGQfyg/User-02.png" alt="signin" height= "40" width="40"></img>
                     </Link>
                   )}
-                  </Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>
