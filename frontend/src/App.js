@@ -50,7 +50,7 @@ function App() {
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto w-100 justify-content-end">
                   <Link to="/cart" className="nav-link text-dark">
-                  <img src="" alt="cart" height= "40" width="40"></img>
+                  <img src="https://i.postimg.cc/L8GVNQVH/Shopping-Cart-02.png" alt="cart" height= "40" width="40"></img>
                     {cart.cartItems.length > 0 && (
                       <Badge pill bg="danger">
                         {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
