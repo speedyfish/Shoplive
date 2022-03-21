@@ -20,6 +20,7 @@ import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 import OrderScreen from "./screens/OrderScreen";
 import OrderHistoryScreen from "./screens/OrderHistoryScreen";
 import ProfileScreen from "./screens/ProfileScreen";
+import "./App.css";
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -33,7 +34,7 @@ function App() {
     window.location.href = "/signin";
   };
   return (
-    <BrowserRouter>
+    <BrowserRouter id="cute-cursor">
       <div className="d-flex flex-column site-container">
         <ToastContainer position="bottom-center" limit={1} />
         <header>
