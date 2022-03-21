@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+Body{
+  cursor:url('../public/images/Red.png');
+}
