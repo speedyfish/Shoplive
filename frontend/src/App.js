@@ -59,7 +59,7 @@ function App() {
                   </Link>
                   
                   {userInfo ? (
-                    <Link className="nav-link" to="/signout">
+                    <Link className="nav-link" to="/signin">
                     <img src="https://i.postimg.cc/76KGQfyg/User-02.png" alt="signin" height= "40" width="40"></img>
                     <NavDropdown title={userInfo.name} id="basic-nav-dropdown">
                       <LinkContainer to="/profile">
