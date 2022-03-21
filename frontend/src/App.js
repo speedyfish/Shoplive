@@ -42,7 +42,7 @@ function App() {
               <LinkContainer to="/">
                 <Navbar.Brand>
                   <img src="https://i.postimg.cc/t4kDbN0r/1.png" alt="logo" height= "100" width="100"></img>
-                  <div class="text-dark d-inline"></div>
+                  <div class="text-dark d-inline">SHOPLIVE</div>
                 </Navbar.Brand>
               </LinkContainer>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
