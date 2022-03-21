@@ -42,11 +42,12 @@ export default function SigninScreen() {
   }, [navigate, redirect, userInfo]);
 
   return (
-    <Container className="small-container">
+    <Container className="small-container bg-dark">
       <Helmet>
         <title>Sign In</title>
       </Helmet>
-      <div class="bg-gradient-dark">
+
+      
       <h1 className="my-3 text-white">Sign In</h1>
       <Form onSubmit={submitHandler}>
         <Form.Group className="mb-3 text-white" controlId="email">
@@ -73,7 +74,7 @@ export default function SigninScreen() {
           <Link to={`/signup?redirect=${redirect}`}>Create your account</Link>
         </div>
       </Form>
-      </div>
+      
     </Container>
   );
 }
