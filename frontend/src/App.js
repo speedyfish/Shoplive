@@ -41,7 +41,7 @@ function App() {
             <Container>
               <LinkContainer to="/">
                 <Navbar.Brand>
-                  <img src="https://i.postimg.cc/t4kDbN0r/1.png" alt="logo"></img>
+                  <img src="https://i.postimg.cc/t4kDbN0r/1.png" alt="logo" class="img-thumbnail"></img>
                   SHOPLIVE
                 </Navbar.Brand>
               </LinkContainer>
