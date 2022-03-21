@@ -43,14 +43,14 @@ function App() {
               <LinkContainer to="/">
                 <Navbar.Brand>
                   <img src="https://i.postimg.cc/t4kDbN0r/1.png" alt="logo" height= "100" width="100"></img>
-                  <div class="text-dark d-inline">SHOPLIVE</div>
+                  <div class="text-dark d-inline ml-5">SHOPLIVE</div>
                 </Navbar.Brand>
               </LinkContainer>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto w-100 justify-content-end">
                   <Link to="/cart" className="nav-link text-dark">
-                    Cart
+                  <img src="frontend/public/Shopping_Cart_02.png" alt="cart" height= "40" width="40"></img>
                     {cart.cartItems.length > 0 && (
                       <Badge pill bg="danger">
                         {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
@@ -76,7 +76,7 @@ function App() {
                     </NavDropdown>
                   ) : (
                     <Link className="nav-link" to="/signin">
-                      <img src="frontend/public/User_02.png" alt="logo" height= "100" width="100"></img>
+                      <img src="frontend/public/user-login-function-name-avatar-icon-free-download-number-symbol-text-logo-transparent-png-2004255.png" alt="signin" height= "40" width="40"></img>
                     </Link>
                   )}
                 </Nav>
