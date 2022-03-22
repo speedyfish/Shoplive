@@ -20,9 +20,9 @@ main {
   color:black;
 }
 
-/* .btn-primary:hover {
+.btn-primary:hover {
   background-color: green;
-} */
+}
 
 .products {
   display: flex;
