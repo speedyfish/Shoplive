@@ -17,13 +17,12 @@ main {
 
 .btn-primary {
   background-color: #6ddd11;
-  color:white;
+  color:black;
 }
 
-.btn-primary:hover {
+/* .btn-primary:hover {
   background-color: green;
-  color: white;
-}
+} */
 
 .products {
   display: flex;
