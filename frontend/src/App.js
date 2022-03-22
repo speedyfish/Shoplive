@@ -59,7 +59,6 @@ function App() {
                   </Link>
                   
                   {userInfo ? (
-                  <img src="https://i.postimg.cc/76KGQfyg/User-02.png" alt="signin" height= "40" width="40"></img>
                     <NavDropdown title={userInfo.name} id="basic-nav-dropdown">
                       <LinkContainer to="/profile">
                         <NavDropdown.Item>User Profile</NavDropdown.Item>
@@ -77,8 +76,8 @@ function App() {
                       </Link>
                     </NavDropdown>
                   ) : (
-                    <Link className="nav-link" to="/signin">
-                      <img src="https://i.postimg.cc/76KGQfyg/User-02.png" alt="signin" height= "40" width="40"></img>
+                    <Link className="nav-link" to="/signin" class="text-dark">
+                      Sign In
                     </Link>
                   )}
                 </Nav>
