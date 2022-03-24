@@ -1,0 +1,36 @@
+version: "3.8"
+
+networks:
+  shared-network:
+    external: true
+ 
+services:
+  backend:
+    container_name: backend_service
+    image: backend_service:1.0.0
+    restart: always
+    build: 
+      context: backend
+      target: production
+      dockerfile: Dockerfile
+    ports:
+      - 5001:5001
+    networks:
+      - shared-network
+
+  frontend:
+    container_name: frontend_service
+    image: frontend_service:1.0.0
+    restart: always
+    build: 
+      context: frontend
+      target: production
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    networks:
+      - shared-network
+    depends_on:
+      - backend
+    
+ 
