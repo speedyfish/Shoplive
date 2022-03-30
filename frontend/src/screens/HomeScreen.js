@@ -51,7 +51,6 @@ function HomeScreen() {
       <div className="m-3" id="sales">
         <img src="https://i.postimg.cc/JzWqnvnx/salesimage-ESD.png" alt="logo" class="center"></img>
       </div>
-      
       <h1>Featured Products</h1>
       <div className="products">
         {loading ? (
