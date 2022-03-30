@@ -43,7 +43,7 @@ export default function SigninScreen() {
   }, [navigate, redirect, userInfo]);
 
   return (
-    <Container className="fluid" id = "sign-in-style">
+    <Container className="fluid text-white" id = "sign-in-style">
       <Helmet>
         <title>Sign In</title>
       </Helmet>

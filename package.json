@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/LaLaNiceApp/ShopLive/issues"
   },
-  "homepage": "https://github.com/LaLaNiceApp/ShopLive#readme"
+  "homepage": "https://github.com/LaLaNiceApp/ShopLive#readme",
+  "dependencies": {
+    "twilio": "^3.76.0"
+  }
 }
