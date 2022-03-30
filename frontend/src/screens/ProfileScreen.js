@@ -66,9 +66,9 @@ export default function ProfileScreen() {
       <Helmet>
         <title>User Profile</title>
       </Helmet>
-      <h1 className="my-3">User Profile</h1>
+      <h1 className="my-3 text-center">User Profile</h1>
       <br></br>
-      <h2 className="my-3 center">Update Password</h2>
+      <h3 className="my-3 center text-center">Update Password</h3>
       <form onSubmit={submitHandler}>
         <Form.Group className="mb-3" controlId="name">
           <Form.Label>Name</Form.Label>
