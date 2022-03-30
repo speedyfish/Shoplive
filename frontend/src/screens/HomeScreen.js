@@ -51,7 +51,6 @@ function HomeScreen() {
       <div className="m-3" id="sales">
         <img src="https://i.postimg.cc/JzWqnvnx/salesimage-ESD.png" alt="logo" class="center"></img>
       </div>
-      
       <h1>Featured Products</h1>
       <div className="products">
         {loading ? (
@@ -67,10 +66,7 @@ function HomeScreen() {
             ))}
           </Row>
         )}
-        <!-- Start of txt.me widget code -->
-<script src="https://v2.txt.me/livechat/js/wrapper/b835863f29244357a0fefbb303b751d0" async></script>
-<noscript><a href="https://txt.me/reviews/b835863f29244357a0fefbb303b751d0" rel="nofollow">Rate First widget customer support</a>, powered by <a href="https://txt.me" rel="noopener nofollow" target="_blank">txt.me</a></noscript>
-<!-- End of txt.me widget code -->
+
       </div>
       
     </div>
