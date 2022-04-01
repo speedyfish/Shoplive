@@ -76,10 +76,13 @@ export default function ChatBox(props) {
             ) : (
                 <div className="card card-body">
                     <div className="row small">
-                        <strong class="text-center">Shoplive's Support</strong>
-                        <button class="btn btn-secondary"onClick={closeHandler}>Close
-                            <i className="fa fa-close" />
-                        </button>
+                        <h4 class="text-center">Shoplive's Support</h4>
+                        <p class="text-center">
+                            You are now in chat with the admin
+                        </p>
+                        {/* <button class="btn btn-secondary"onClick={closeHandler}>Close */}
+                            {/* <i className="fa fa-close" />
+                        </button> */}
                     </div>
                     <ul ref={uiMessagesRef}>
                         {messages.map((msg, index) => (
@@ -95,10 +98,16 @@ export default function ChatBox(props) {
                                 value={messageBody}
                                 onChange={(e) => setMessageBody(e.target.value)}
                                 type="text"
-                                placeholder="type message"
+                                placeholder="Type message..."
                             />
                             <button className="submit" type="submit" class="btn btn-outline-primary btn-sm">Send</button>
                         </form>
+                    </div>
+                        <p></p>
+                    <div className="row small">
+                        <button class="btn btn-secondary"onClick={closeHandler}>Close
+                            <i className="fa fa-close" />
+                        </button>
                     </div>
 
                 </div>
