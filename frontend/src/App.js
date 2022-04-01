@@ -86,6 +86,15 @@ function App() {
                     </Link>
                   )}
                   {userInfo && userInfo.isAdmin && (
+                    // <div className="dropdown">
+                    //   <Link to="admin">Admin {' '} <i className="fa fa-caret-down"></i>
+                    //   </Link>
+                    //   <ul className="dropdown-content">
+                    //     <li>
+                    //       <Link to="/support">Support</Link>
+                    //     </li>
+                    //   </ul>
+                    // </div>
 
                 <NavDropdown title="Admin" id="admin-nav-dropdown">
                   <LinkContainer to="/support">
