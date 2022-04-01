@@ -53,7 +53,7 @@ const io = new Server(httpServer);
 const users = [];
 
 io.on('connection', (socket) => {
-  socket.on('disconnet', () => {
+  socket.on('disconnect', () => {
   const user = users.find((x) => x.socketId === socket.id);
   if (user) {
     user.online = false;

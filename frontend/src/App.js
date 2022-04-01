@@ -23,7 +23,7 @@ import ProfileScreen from "./screens/ProfileScreen";
 import ProtectedRoute from "./components/ProtectedRoute";
 import "./App.css";
 import AdminRoute from "./components/AdminRoute";
-import DashboardScreen from "./screens/DashboardScreen";
+// import DashboardScreen from "./screens/DashboardScreen";
 import SupportScreen from "./screens/SupportScreen";
 import ChatBox from "./components/ChatBox";
 
@@ -163,13 +163,19 @@ function App() {
                 </AdminRoute>
                 }
                 ></Route>
-                
-                
-            
-            
-            
+                {/* <Route
+                path="/admin/support"
+                element={<SupportScreen />}
+              ></Route> */}
 
-            
+              {/* <Route
+                path="/support"
+                element={
+                  <ProtectedRoute>
+                  <SupportScreen />
+                </ProtectedRoute>
+                }
+              ></Route> */}
 
               <Route path="/" element={<HomeScreen />} />
             </Routes>
@@ -186,3 +192,4 @@ function App() {
 }
 
 export default App;
+
