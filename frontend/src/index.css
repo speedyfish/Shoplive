@@ -89,12 +89,13 @@ main {
   color: black;
   position: fixed;
   bottom: 1rem;
-  /* right: -1375px; */
+  right: 1rem;
+
 }
 
 .chatbox ul {
-  max-height: 20rem;
-  max-width: 20rem;
+  height: 200px; 
+  overflow-y: scroll;
   list-style-type: none;
 }
 
@@ -104,13 +105,13 @@ main {
 
 .chatbox input{
   width: calc(100%);
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 
 .support-users {
   background: #f0f0f0;
   height: 100%;
-  color: black;
+  color: rgb(138, 5, 96);
 }
 
 .support-users li {
