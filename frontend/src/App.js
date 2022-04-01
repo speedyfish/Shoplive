@@ -24,6 +24,8 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import "./App.css";
 import AdminRoute from "./components/AdminRoute";
 import DashboardScreen from "./screens/DashboardScreen";
+import SupportScreen from "./screens/SupportScreen";
+import ChatBox from "./components/ChatBox";
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -86,18 +88,18 @@ function App() {
                   {userInfo && userInfo.isAdmin && (
 
                 <NavDropdown title="Admin" id="admin-nav-dropdown">
-                  <LinkContainer to="/admin/dashboard">
-                    <NavDropdown.Item>Dashboard</NavDropdown.Item>
+                  <LinkContainer to="/admin/support">
+                    <NavDropdown.Item>Support</NavDropdown.Item>
                   </LinkContainer>
-                  <LinkContainer to="/admin/productlist">
-                    <NavDropdown.Item>Products</NavDropdown.Item>
-                  </LinkContainer>
-                  <LinkContainer to="/admin/orderlist">
-                    <NavDropdown.Item>Orders</NavDropdown.Item>
-                  </LinkContainer>
-                  <LinkContainer to="/admin/userlist">
-                    <NavDropdown.Item>Users</NavDropdown.Item>
-                  </LinkContainer>
+                  {/* <LinkContainer to="/admin/productlist"> */}
+                    {/* <NavDropdown.Item>Products</NavDropdown.Item> */}
+                  {/* </LinkContainer> */}
+                  {/* <LinkContainer to="/admin/orderlist"> */}
+                    {/* <NavDropdown.Item>Orders</NavDropdown.Item> */}
+                  {/* </LinkContainer> */}
+                  {/* <LinkContainer to="/admin/userlist"> */}
+                    {/* <NavDropdown.Item>Users</NavDropdown.Item> */}
+                  {/* </LinkContainer> */}
                 </NavDropdown>
                 )}
                 </Nav>
@@ -143,10 +145,10 @@ function App() {
               <Route path="/payment" element={<PaymentMethodScreen />}></Route>
               {/* Admin Routes */}
               <Route 
-              path="/admin/dashboard" 
+              path="/admin/support" 
               element={
               <AdminRoute>
-                <DashboardScreen/>
+                <SupportScreen/>
               </AdminRoute>
               }
 
@@ -156,8 +158,10 @@ function App() {
             </Routes>
           </Container>
         </main>
-        <footer>
+        <footer className="row center">
+          {userInfo && !userInfo.isAdmin && <ChatBox userInfo={userInfo} />}
           <div className="text-center">All rights reserved</div>
+          {/* <div className="text-center">All rights reserved</div> */}
         </footer>
       </div>
     </BrowserRouter>
