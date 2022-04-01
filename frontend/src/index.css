@@ -87,10 +87,8 @@ main {
 
 .chatbox{
   color: black;
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-
+  position: fixed; 
+  bottom:0; right:0; left:0;
 }
 
 .chatbox ul {
