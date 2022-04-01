@@ -54,7 +54,7 @@ const users = [];
 
 io.on('connection', (socket) => {
   socket.on('disconnet', () => {
-  const user = user.find((x) => x.socketId === socket.id);
+  const user = users.find((x) => x.socketId === socket.id);
   if (user) {
     user.online = false;
     console.log('Offline', user.name);
@@ -63,7 +63,7 @@ io.on('connection', (socket) => {
       io.to(admin.socketId).emit('updateUser', user);
     }
   }
-  });
+});
 
   socket.on('onLogin', (user) => {
     const updatedUser = {
@@ -76,7 +76,7 @@ io.on('connection', (socket) => {
     if(existUser){
       existUser.socketId = socket.id;
       existUser.online = true;
-    } else{
+    } else {
       users.push(updatedUser);
     }
     console.log('Online', user.name);
@@ -90,7 +90,7 @@ io.on('connection', (socket) => {
   });
   socket.on('onUserSelected', (user) => {
     const admin = users.find((x) => x.isAdmin && x.online);
-    if(admin) {
+    if (admin) {
       const existUser = users.find((x) => x._id === user._id);
       io.to(admin.socketId).emit('selectUser', existUser);
     }

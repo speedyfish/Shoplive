@@ -88,7 +88,7 @@ function App() {
                   {userInfo && userInfo.isAdmin && (
 
                 <NavDropdown title="Admin" id="admin-nav-dropdown">
-                  <LinkContainer to="/admin/support">
+                  <LinkContainer to="/support">
                     <NavDropdown.Item>Support</NavDropdown.Item>
                   </LinkContainer>
                   {/* <LinkContainer to="/admin/productlist"> */}
@@ -129,6 +129,7 @@ function App() {
                 </ProtectedRoute>
               }
               ></Route>
+
               <Route
                 path="/orderhistory"
                 element={
@@ -142,17 +143,24 @@ function App() {
                 path="/shipping"
                 element={<ShippingAddressScreen />}
               ></Route>
+
               <Route path="/payment" element={<PaymentMethodScreen />}></Route>
               {/* Admin Routes */}
-              <Route 
-              path="/admin/support" 
-              element={
-              <AdminRoute>
-                <SupportScreen/>
-              </AdminRoute>
-              }
+            
+                <Route path="/admin/support" 
+                element={
+                <AdminRoute>
+                  <SupportScreen/>
+                </AdminRoute>
+                }
+                ></Route>
+                
+                
+            
+            
+            
 
-              ></Route>
+            
 
               <Route path="/" element={<HomeScreen />} />
             </Routes>

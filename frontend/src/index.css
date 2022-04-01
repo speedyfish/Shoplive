@@ -111,10 +111,12 @@ main {
 .support-users {
   background: #f0f0f0;
   height: 100%;
+  color: black;
 }
 
 .support-users li {
   background-color: #f8f8f8;
+  color: black;
 }
 
 .support-users button{
@@ -127,6 +129,7 @@ main {
   margin: 0;
   background-color: #f0f0f0;
   border-bottom: 0.1rem #c0c0c0 solid;
+  color: black;
 }
 
 .support-users li.hover {
@@ -139,6 +142,7 @@ main {
 
 .support-messages{
   padding: 1rem;
+  color: black;
 }
 
 .support-messages input {
@@ -149,6 +153,7 @@ main {
   height: calc(100vh - 18rem);
   max-height: calc(100vh - 18rem);
   overflow: scroll;
+  color: black;
 }
 
 .support-messages li {

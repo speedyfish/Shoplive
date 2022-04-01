@@ -17,6 +17,7 @@ const ENDPOINT =
 
 
 export default function SupportScreen() {
+    
     const [selectedUser, setSelectedUser] = useState({});
     const [socket, setSocket] = useState(null);
     const uiMessagesRef = useRef(null);
@@ -25,7 +26,9 @@ export default function SupportScreen() {
     const [users, setUsers] = useState([]);
     const userSignin = useSelector((state) => state.userSignin);
     const { userInfo } = userSignin;
-
+   
+   
+   
     useEffect(() => {
         if (uiMessagesRef.current){
             uiMessagesRef.current.scrollBy({
@@ -121,7 +124,7 @@ export default function SupportScreen() {
     };
 
     return ( 
-    <div className="row top full-containers">
+    <div className="row top full-container">
         <div className="col-1 support-users">
             {users.filter((x) => x._id !== userInfo._id).length === 0 && (
                 <MessageBox>No Online User Found</MessageBox>
