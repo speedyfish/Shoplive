@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState, useRef } from 'react'
 import socketIOClient from 'socket.io-client';
 
@@ -66,16 +67,16 @@ export default function ChatBox(props) {
     };
 
     return (
-    <div className="chatbox">
+    <div className="chatbox small-container">
         {!isOpen ? (
             <button type="button" onClick={supportHandler}>
                 <i className="fa fa-support" />
             </button>
         ) : (
-            <div className="card card-body">
+            <div className="card card-body small-container">
                 <div className="row">
                     <strong>Support</strong>
-                    <button type="button" onClick={closeHandler}>Close
+                    <button onClick={closeHandler}>Close
                     <i className="fa fa-close" />
                     </button>
                 </div> 
@@ -95,7 +96,7 @@ export default function ChatBox(props) {
                         type="text"
                         placeholder="type message"
                         />
-                        <button type="submit">Send</button>
+                        <button className="submit" type="submit">Send</button>
                     </form>
                 </div>
 

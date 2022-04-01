@@ -93,7 +93,6 @@ main {
 }
 
 .chatbox ul {
-  overflow: scroll;
   max-height: 20rem;
   max-width: 20rem;
   list-style-type: none;
