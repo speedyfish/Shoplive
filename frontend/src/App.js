@@ -166,11 +166,7 @@ function App() {
                 
                 
             
-            
-            
-
-            
-
+      
               <Route path="/" element={<HomeScreen />} />
             </Routes>
           </Container>
