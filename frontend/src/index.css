@@ -88,13 +88,15 @@ main {
 .chatbox{
   color: black;
   position: fixed;
-  right: 1rem;
   bottom: 1rem;
+  /* right: -1375px; */
 }
 
 .chatbox ul {
-  overflow:scroll;
+  overflow: scroll;
   max-height: 20rem;
+  max-width: 20rem;
+  list-style-type: none;
 }
 
 .chatbox li {
@@ -102,7 +104,8 @@ main {
 }
 
 .chatbox input{
-  width: calcl(100% - 9rem);
+  width: calc(100%);
+  margin-bottom: 10px;
 }
 
 .support-users {
@@ -117,13 +120,17 @@ main {
 .support-users button{
   background-color: transparent;
   border: none;
-  text-align: left;
+  text-align: right;
 }
 
 .support-users li{
   margin: 0;
   background-color: #f0f0f0;
   border-bottom: 0.1rem #c0c0c0 solid;
+}
+
+.support-users li.hover {
+  background-color: #f0f0f0;
 }
 
 .support-users li.selected {

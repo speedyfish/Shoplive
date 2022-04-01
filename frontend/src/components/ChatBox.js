@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react'
 import socketIOClient from 'socket.io-client';
 
 const ENDPOINT = 
@@ -75,7 +75,7 @@ export default function ChatBox(props) {
             <div className="card card-body">
                 <div className="row">
                     <strong>Support</strong>
-                    <button type="button" onClick={closeHandler}>
+                    <button type="button" onClick={closeHandler}>Close
                     <i className="fa fa-close" />
                     </button>
                 </div> 
