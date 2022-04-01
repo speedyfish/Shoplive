@@ -69,8 +69,7 @@ export default function ChatBox(props) {
     return (
         <div className="chatbox small-container">
             {!isOpen ? (
-                <button type="button" onClick={supportHandler}>
-
+                <button type="button"  className="border-0 bg-transparent" onClick={supportHandler}>
                     <img src="https://i.postimg.cc/yN0S58sQ/Grsssssssoup.png"></img>
                     <i className="fa fa-support" />
                 </button>
