@@ -77,8 +77,8 @@ export default function ChatBox(props) {
             ) : (
                 <div className="card card-body">
                     <div className="row small">
-                        <strong>Support</strong>
-                        <button onClick={closeHandler}>Close
+                        <strong class="text-center">Shoplive's Support</strong>
+                        <button class="btn btn-secondary"onClick={closeHandler}>Close
                             <i className="fa fa-close" />
                         </button>
                     </div>
@@ -98,7 +98,7 @@ export default function ChatBox(props) {
                                 type="text"
                                 placeholder="type message"
                             />
-                            <button className="submit" type="submit">Send</button>
+                            <button className="submit" type="submit" class="btn btn-outline-primary btn-sm">Send</button>
                         </form>
                     </div>
 
