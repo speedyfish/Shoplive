@@ -95,8 +95,8 @@ main {
   height: 200px; 
   overflow-y: scroll;
   list-style-type: none;
-  background-color: lightblue;
 }
+
 
 .chatbox li {
   margin-bottom: 1rem;
