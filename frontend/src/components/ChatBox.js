@@ -90,7 +90,6 @@ export default function ChatBox(props) {
                                 <strong>{`${msg.name}: `}</strong> {msg.body}
                             </li>
                         ))}
-
                     </ul>
                     <div>
                         <form onSubmit={submitHandler} className="row">
