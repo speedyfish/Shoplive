@@ -1,26 +1,67 @@
 version: "3.8"
-
-networks:
-  shared-network:
-    external: true
  
 services:
-  backend:
-    container_name: backend_service
-    image: backend_service:1.0.0
+  seed:
+    container_name: seedservice
+    image: seedservice:1.0.0
     restart: always
     build: 
-      context: backend
+      context: seed
       target: production
       dockerfile: Dockerfile
     ports:
-      - 5001:5001
+      - 5002:5002
     networks:
-      - shared-network
+      production:
+        ipv4_address: 172.50.1.31
+
+      
+  orders:
+    container_name: orderservice
+    image: orderservice:1.0.0
+    restart: always
+    build: 
+      context: orders
+      target: production
+      dockerfile: Dockerfile
+    ports:
+      - 5003:5003
+    networks:
+      production:
+        ipv4_address: 172.50.1.32
+
+  products:
+    container_name: productservice
+    image: productservice:1.0.0
+    restart: always
+    build: 
+      context: products
+      target: production
+      dockerfile: Dockerfile
+    ports:
+      - 5004:5004
+    networks:
+      production:
+        ipv4_address: 172.50.1.33
+
+  users:
+    container_name: userservice
+    image: userservice:1.0.0
+    restart: always
+    build: 
+      context: users
+      target: production
+      dockerfile: Dockerfile
+    ports:
+      - 5005:5005
+    networks:
+      production:
+        ipv4_address: 172.50.1.34
+
 
   frontend:
-    container_name: frontend_service
-    image: frontend_service:1.0.0
+    container_name: frontendservice
+    image: frontendservice:1.0.0
     restart: always
     build: 
       context: frontend
@@ -28,9 +69,18 @@ services:
       dockerfile: Dockerfile
     ports:
       - 3000:3000
-    networks:
-      - shared-network
     depends_on:
-      - backend
-    
- 
+      - seed
+      - orders
+      - products
+      - users
+    networks:
+      production:
+        ipv4_address: 172.50.1.35
+
+networks:
+  production:
+    ipam:
+      driver: default
+      config:
+      - subnet: 172.50.0.0/16

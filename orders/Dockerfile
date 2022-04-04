@@ -10,4 +10,3 @@ COPY package-lock.json .
 COPY . .
 
 CMD ["npm","start"]
-
